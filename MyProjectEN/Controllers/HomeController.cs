@@ -26,7 +26,13 @@ namespace MyProjectEN.Controllers
         public IActionResult Privacy()
         {
             return View();
-        }public IActionResult Contact()
+        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        
+        public IActionResult Test()
         {
             return View();
         }

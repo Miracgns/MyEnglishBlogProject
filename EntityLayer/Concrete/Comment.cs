@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EntityLayer.Concrete
+{
+    public class Comment
+    {
+        public int CommentID { get; set; }
+        public string CommmentUserName { get; set; }
+        public string CommmentTitle { get; set; }
+        public string CommmentContent { get; set; }
+        public DateTime CommentDate { get; set; }
+        public bool CommmentStatus { get; set; }
+    }
+}
