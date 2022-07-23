@@ -118,16 +118,16 @@ namespace DataAccessLayer.Migrations
                     b.Property<DateTime>("CommentDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("CommmentContent")
+                    b.Property<string>("CommentContent")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("CommmentStatus")
+                    b.Property<bool>("CommentStatus")
                         .HasColumnType("bit");
 
-                    b.Property<string>("CommmentTitle")
+                    b.Property<string>("CommentTitle")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CommmentUserName")
+                    b.Property<string>("CommentUserName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CommentID");

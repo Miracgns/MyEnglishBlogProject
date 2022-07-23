@@ -64,11 +64,11 @@ namespace DataAccessLayer.Migrations
                 {
                     CommentID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CommmentUserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CommmentTitle = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CommmentContent = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CommentUserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CommentTitle = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CommentContent = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CommentDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CommmentStatus = table.Column<bool>(type: "bit", nullable: false)
+                    CommentStatus = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
