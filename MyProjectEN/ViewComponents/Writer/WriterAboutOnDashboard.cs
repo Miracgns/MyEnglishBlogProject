@@ -4,14 +4,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MyProjectEN.ViewComponents.Writer
 {
-    public class WriterNotification : ViewComponent
+    public class WriterAboutOnDashboard:ViewComponent
     {
-        NotificationManager nm = new NotificationManager(new EfNotificationRepository());
+        WriterManager writerManager = new WriterManager(new EfWriterRepository());
 
         public IViewComponentResult Invoke()
         {
-            var values = nm.GetList();
+            var values = writerManager.GetWriterById(1);
             return View(values);
+
         }
     }
 }
