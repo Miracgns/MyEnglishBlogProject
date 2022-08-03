@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿ using Microsoft.AspNetCore.Mvc;
 
 namespace MyProjectEN.Areas.Admin.Controllers
 {
@@ -11,3 +11,4 @@ namespace MyProjectEN.Areas.Admin.Controllers
         }
     }
 }
+ 

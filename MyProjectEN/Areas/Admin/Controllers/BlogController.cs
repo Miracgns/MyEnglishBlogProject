@@ -52,7 +52,7 @@ namespace MyProjectEN.Areas.Admin.Controllers
         }
 
         public IActionResult ExportDynamicExcelBlogList()
-        {
+        { 
             using (var workbook = new XLWorkbook())
             {
                 var worksheet = workbook.Worksheets.Add("Blog Listesi");

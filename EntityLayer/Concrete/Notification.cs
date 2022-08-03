@@ -17,3 +17,4 @@ namespace EntityLayer.Concrete
         public string NotificationColor { get; set; }
     }
 }
+ 

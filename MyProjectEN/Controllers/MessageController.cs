@@ -21,6 +21,6 @@ namespace MyProjectEN.Controllers
         {
             var value = mm.TGetById(id);
             return View(value);
-        }
+        } 
     }
 }

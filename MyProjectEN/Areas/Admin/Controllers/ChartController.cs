@@ -21,7 +21,7 @@ namespace MyProjectEN.Areas.Admin.Controllers
                 categoryname = "Gold",
                 categorycount = 12
             });
-            list.Add(new CategoryClass
+            list.Add(new CategoryClass 
             {
                 categoryname = "Silver",
                 categorycount = 8

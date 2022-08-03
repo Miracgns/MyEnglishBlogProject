@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿ using Microsoft.AspNetCore.Mvc;
 using MyProjectEN.Areas.Admin.Models;
 using Newtonsoft.Json;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 namespace MyProjectEN.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class WriterController : Controller
+    public class WriterController : Controller 
     {
         public IActionResult Index()
         {

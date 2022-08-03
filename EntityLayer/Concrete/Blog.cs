@@ -11,7 +11,7 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int BlogID { get; set; }
-        public string BlogTitle { get; set; }
+        public string BlogTitle { get; set; } 
         public string BlogContect { get; set; }
         public string BlogThumbnailImage { get; set; }
         public string BlogImage { get; set; }

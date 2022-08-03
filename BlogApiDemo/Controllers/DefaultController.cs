@@ -11,7 +11,7 @@ namespace BlogApiDemo.Controllers
     {
         [HttpGet]
         public IActionResult EmployeeList()
-        {
+        { 
             using var c = new Context();
             var values = c.Employees.ToList();
             return Ok(values);

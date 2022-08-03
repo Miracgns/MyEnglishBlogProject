@@ -9,3 +9,4 @@ namespace MyProjectEN.Models
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
 }
+ 

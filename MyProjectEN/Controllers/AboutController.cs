@@ -13,7 +13,7 @@ namespace MyProjectEN.Controllers
             var values = abm.GetList();
             return View(values);
         }
-        public PartialViewResult SocialMediaAbout()
+        public PartialViewResult SocialMediaAbout() 
         {
             return PartialView();
         }
