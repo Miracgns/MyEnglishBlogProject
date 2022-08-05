@@ -1,0 +1,28 @@
+﻿@using MyProjectEN.Controllers
+@model List<Class1>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+
+<table class=" table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Name Surname</th>
+        <th>Delete</th>
+        <th>Edit </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td>
+            <td><a href="/EmployeeTest/DeleteEmployee/@item.ID" class="btn btn-outline-danger">Delete</a></td>
+            <td><a href="/EmployeeTest/EditEmployee/@item.ID" class="btn btn-outline-success">Edit</a></td>
+        </tr>
+    }
+</table>
+<a href="/EmployeeTest/AddEmployee/" class="btn btn-outline-primary">New Employee Login</a>
