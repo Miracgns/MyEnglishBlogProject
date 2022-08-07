@@ -1,0 +1,52 @@
+﻿
+@using EntityLayer.Concrete
+@model List<AppRole>
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+<html>
+<body>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Rollers </h5>
+
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Title</th>
+                                    <th>Delete</th>
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <th>@item.Id</th>
+                                        <td>@item.Name</td>
+                                        <td><a href="/Admin/AdminRol/DeleteRole/@item.Id" class="btn btn-outline-danger">Delete</a></td>
+                                        <td><a href="/Admin/AdminRol/UpdateRole/@item.Id" class="btn btn-outline-success">Edit</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <a href="/Admin/AdminRol/AddRole/" class="btn btn-outline-primary">Add new role</a>
+                        <a href="/Admin/AdminRol/UserRoleList/" class="btn btn-outline-info">User role list</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
