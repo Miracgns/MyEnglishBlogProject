@@ -15,6 +15,7 @@ namespace jwt_core_proje_kampi.Controllers
             return Created("", new BuildToken().CreateToken());
 
         }
+
         [Authorize]
         [HttpGet("[action]")]
         public IActionResult Page1()

@@ -10,4 +10,5 @@ namespace BlogApiDemo.DataAccessLayer
         }
         public DbSet<Employee> Employees { get; set; }
     }
+
 }
