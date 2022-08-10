@@ -21,7 +21,7 @@ namespace MyProjectEN.Controllers
         {
             p.MailStatus = true;
             nm.AddNewsLetter(p);
-            return PartialView();
+            return RedirectToAction("BlogReadAll", "Blog", new { id = "" });
         }
     }
 }

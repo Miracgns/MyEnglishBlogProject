@@ -29,7 +29,7 @@ namespace MyProjectEN.Controllers
             p.CommmentStatus = true;
             p.BlogID = 2;
             cm.CommentAdd(p);
-            return PartialView();
+            return RedirectToAction("BlogReadAll", "Blog", new { id = p.BlogID });
         }
         public PartialViewResult CommentListByBlog(int id)
         {

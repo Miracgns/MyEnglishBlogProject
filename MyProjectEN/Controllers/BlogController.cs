@@ -68,7 +68,7 @@ namespace MyProjectEN.Controllers
                 p.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());
                 p.WriterID = writerID;
                 bm.TAdd(p);
-                return RedirectToAction("BlogLisByWriter", "Blog");
+                return RedirectToAction("BlogListByWriter", "Blog");
             }
             else
             {
