@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/UserLayout.cshtml";
 }
-
+ 
 <section class="main-content-w3layouts-agileits">
     <div class="container">
         <h3 class="tittle">Blogs</h3>
@@ -41,7 +41,7 @@
                                     <a href="/Blog/BlogReadAll/@item.BlogID">@item.BlogTitle</a>
                                 </h5>
                                 <p class="card-text mb-3">@item.BlogContect.Substring(0, item.BlogContect.Substring(0,130).LastIndexOf(" "))...</p>
-                                <a href="/Blog/BlogReadAll/@item.BlogID" class="btn btn-primary read-m">Read More</a>
+                                <a href="/Blog/BlogReadAll/@item.BlogID" class="btn btn-primary read-m">Read More...</a>
                             </div>
                         </div>
                         <br />
